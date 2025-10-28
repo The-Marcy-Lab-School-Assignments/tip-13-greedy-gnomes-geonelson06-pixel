@@ -27,7 +27,9 @@
  */
 
 const getNamesOfGreedyGnomes = (gnomes) => {
-  //write your code here
+ let greedyGnomes = gnomes.filter((gnomes) => gnomes.stolenDecorations.length > 1)
+
+ return greedyGnomes.map((gnomes) => gnomes.name);
 };
 
 module.exports = { getNamesOfGreedyGnomes };
